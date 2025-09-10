@@ -175,6 +175,14 @@ All colors MUST be HSL.
     color: hsl(var(--indie-brown));
   }
   
+  .text-indie-brown-soft {
+    color: hsl(var(--indie-brown-soft));
+  }
+  
+  .text-indie-brown-muted {
+    color: hsl(var(--indie-brown-muted));
+  }
+  
   .bg-indie-orange {
     background-color: hsl(var(--indie-orange));
   }
@@ -189,5 +197,17 @@ All colors MUST be HSL.
   
   .hover\:bg-indie-orange-soft:hover {
     background-color: hsl(var(--indie-orange-soft));
+  }
+  
+  .hover\:border-indie-orange-muted:hover {
+    border-color: hsl(var(--indie-orange-muted));
+  }
+  
+  .hover\:border-indie-orange-soft:hover {
+    border-color: hsl(var(--indie-orange-soft));
+  }
+  
+  .hover\:text-indie-brown-soft:hover {
+    color: hsl(var(--indie-brown-soft));
   }
 }
