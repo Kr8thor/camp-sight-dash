@@ -8,132 +8,146 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 248 250 252;
-    --foreground: 15 23 42;
+    /* Indie Campers Brand Colors - Softened for better viewing */
+    /* Original Blaze Orange #FF5B00 = HSL(21, 100%, 50%) */
+    /* Softened to reduce intensity while maintaining warmth */
+    --indie-orange: 21 70% 58%; /* Softer orange - reduced saturation and increased lightness */
+    --indie-orange-soft: 21 50% 65%; /* Even softer for backgrounds */
+    --indie-orange-muted: 21 35% 75%; /* Very soft for large areas */
+    --indie-orange-original: 21 100% 50%; /* Original for logos/accents only */
+    
+    /* Original Brown #993600 = HSL(21, 100%, 30%) */
+    /* Softened for better readability */
+    --indie-brown: 21 60% 38%; /* Softer brown - reduced saturation, increased lightness */
+    --indie-brown-soft: 21 40% 48%; /* Lighter brown for secondary elements */
+    --indie-brown-muted: 21 25% 58%; /* Very light brown for backgrounds */
+    --indie-brown-original: 21 100% 30%; /* Original for special accents */
+    
+    /* Off-white for softer contrast */
+    --indie-cream: 30 20% 97%; /* Warm cream instead of pure white */
+    --indie-white: 30 15% 98%; /* Slightly warmer white */
+    
+    /* Updated system colors using softened Indie Campers palette */
+    --background: 30 15% 98%; /* Warm cream background */
+    --foreground: 21 40% 25%; /* Softer dark brown for text */
 
     --card: 0 0% 100%;
-    --card-foreground: 15 23 42;
+    --card-foreground: 21 40% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 15 23 42;
+    --popover-foreground: 21 40% 25%;
 
-    --primary: 217 91% 60%;
+    --primary: 21 70% 58%; /* Softened Indie orange */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 241 5% 97%;
-    --secondary-foreground: 15 23 42;
+    --secondary: 21 25% 92%; /* Very light orange tint */
+    --secondary-foreground: 21 60% 38%;
 
-    --muted: 241 5% 97%;
-    --muted-foreground: 100 7% 40%;
+    --muted: 21 15% 93%;
+    --muted-foreground: 21 25% 45%;
 
-    --accent: 241 5% 97%;
-    --accent-foreground: 15 23 42;
+    --accent: 21 50% 65%; /* Soft orange accent */
+    --accent-foreground: 21 60% 25%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 70% 55%; /* Softened red */
     --destructive-foreground: 0 0% 100%;
 
-    --border: 226 29% 90%;
-    --input: 226 29% 90%;
-    --ring: 217 91% 60%;
+    --border: 21 20% 88%; /* Warm light border */
+    --input: 21 20% 88%;
+    --ring: 21 70% 58%; /* Soft orange ring */
 
-    /* Dashboard specific colors */
-    --success: 142 76% 36%;
+    /* Dashboard specific colors - all softened */
+    --success: 142 50% 45%; /* Softer green */
     --success-foreground: 0 0% 100%;
-    --success-light: 142 69% 58%;
+    --success-light: 142 40% 65%;
     
-    --warning: 45 93% 47%;
+    --warning: 45 75% 55%; /* Softer yellow-orange */
     --warning-foreground: 0 0% 100%;
-    --warning-light: 45 93% 67%;
+    --warning-light: 45 60% 70%;
     
-    --danger: 0 84% 60%;
+    --danger: 0 70% 55%; /* Softer red */
     --danger-foreground: 0 0% 100%;
-    --danger-light: 0 84% 80%;
+    --danger-light: 0 50% 75%;
     
-    --dashboard-bg: 248 250 252;
+    --dashboard-bg: 30 15% 98%; /* Warm cream background */
     --dashboard-card: 0 0% 100%;
-    --dashboard-border: 226 29% 90%;
+    --dashboard-border: 21 20% 88%;
     
-    /* Travel industry inspired colors */
-    --travel-blue: 217 91% 60%;
-    --travel-green: 142 76% 36%;
-    --travel-orange: 25 95% 53%;
+    /* Travel industry inspired colors - softened to match */
+    --travel-blue: 217 60% 65%; /* Softer blue */
+    --travel-green: 142 50% 45%; /* Softer green */
+    --travel-orange: 21 70% 58%; /* Matches primary orange */
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 30 12% 96%;
+    --sidebar-foreground: 21 40% 25%;
+    --sidebar-primary: 21 70% 58%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 21 20% 92%;
+    --sidebar-accent-foreground: 21 60% 25%;
+    --sidebar-border: 21 20% 88%;
+    --sidebar-ring: 21 70% 58%;
   }
 
   .dark {
-    --background: 15 23 42;
-    --foreground: 248 250 252;
+    /* Dark mode with softened Indie Campers colors */
+    --background: 21 25% 12%; /* Very dark warm brown */
+    --foreground: 30 15% 95%; /* Warm off-white */
 
-    --card: 15 23 42;
-    --card-foreground: 248 250 252;
+    --card: 21 20% 16%;
+    --card-foreground: 30 15% 95%;
 
-    --popover: 15 23 42;
-    --popover-foreground: 248 250 252;
+    --popover: 21 20% 16%;
+    --popover-foreground: 30 15% 95%;
 
-    --primary: 217 91% 60%;
+    --primary: 21 65% 52%; /* Slightly muted orange for dark mode */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 30 10% 20%;
-    --secondary-foreground: 248 250 252;
+    --secondary: 21 20% 20%;
+    --secondary-foreground: 30 15% 95%;
 
-    --muted: 30 10% 20%;
-    --muted-foreground: 156 163% 175%;
+    --muted: 21 15% 25%;
+    --muted-foreground: 21 15% 65%;
 
-    --accent: 30 10% 20%;
-    --accent-foreground: 248 250 252;
+    --accent: 21 50% 45%; /* Muted orange accent */
+    --accent-foreground: 30 15% 95%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 65% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 30 12% 25%;
-    --input: 30 12% 25%;
-    --ring: 217 91% 60%;
+    --border: 21 15% 25%;
+    --input: 21 15% 25%;
+    --ring: 21 65% 52%;
     
-    --success: 142 76% 36%;
+    --success: 142 45% 40%;
     --success-foreground: 0 0% 100%;
-    --success-light: 142 69% 58%;
+    --success-light: 142 40% 55%;
     
-    --warning: 45 93% 47%;
+    --warning: 45 70% 50%;
     --warning-foreground: 0 0% 100%;
-    --warning-light: 45 93% 67%;
+    --warning-light: 45 55% 65%;
     
-    --danger: 0 84% 60%;
+    --danger: 0 65% 50%;
     --danger-foreground: 0 0% 100%;
-    --danger-light: 0 84% 80%;
+    --danger-light: 0 45% 65%;
     
-    --dashboard-bg: 15 23 42;
-    --dashboard-card: 30 10% 20%;
-    --dashboard-border: 30 12% 25%;
+    --dashboard-bg: 21 25% 12%;
+    --dashboard-card: 21 20% 16%;
+    --dashboard-border: 21 15% 25%;
     
-    --travel-blue: 217 91% 60%;
-    --travel-green: 142 76% 36%;
-    --travel-orange: 25 95% 53%;
+    --travel-blue: 217 55% 55%;
+    --travel-green: 142 45% 40%;
+    --travel-orange: 21 65% 52%;
 
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-background: 21 25% 10%;
+    --sidebar-foreground: 30 12% 92%;
+    --sidebar-primary: 21 65% 52%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 21 20% 18%;
+    --sidebar-accent-foreground: 30 12% 92%;
+    --sidebar-border: 21 15% 20%;
+    --sidebar-ring: 21 65% 52%;
   }
 }
 
@@ -144,5 +158,36 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Additional utility classes for Indie Campers branding */
+@layer utilities {
+  .bg-indie-gradient {
+    @apply bg-gradient-to-br from-[hsl(21,70%,58%)] to-[hsl(21,60%,38%)];
+  }
+  
+  .text-indie-orange {
+    color: hsl(var(--indie-orange));
+  }
+  
+  .text-indie-brown {
+    color: hsl(var(--indie-brown));
+  }
+  
+  .bg-indie-orange {
+    background-color: hsl(var(--indie-orange));
+  }
+  
+  .bg-indie-brown {
+    background-color: hsl(var(--indie-brown));
+  }
+  
+  .border-indie-orange {
+    border-color: hsl(var(--indie-orange));
+  }
+  
+  .hover\:bg-indie-orange-soft:hover {
+    background-color: hsl(var(--indie-orange-soft));
   }
 }
