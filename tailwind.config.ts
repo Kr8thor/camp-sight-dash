@@ -72,6 +72,23 @@ export default {
           green: "hsl(var(--travel-green))",
           orange: "hsl(var(--travel-orange))",
         },
+        // Indie Campers brand colors - softened variations
+        indie: {
+          orange: {
+            DEFAULT: "hsl(var(--indie-orange))",
+            soft: "hsl(var(--indie-orange-soft))",
+            muted: "hsl(var(--indie-orange-muted))",
+            original: "hsl(var(--indie-orange-original))",
+          },
+          brown: {
+            DEFAULT: "hsl(var(--indie-brown))",
+            soft: "hsl(var(--indie-brown-soft))",
+            muted: "hsl(var(--indie-brown-muted))",
+            original: "hsl(var(--indie-brown-original))",
+          },
+          cream: "hsl(var(--indie-cream))",
+          white: "hsl(var(--indie-white))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
