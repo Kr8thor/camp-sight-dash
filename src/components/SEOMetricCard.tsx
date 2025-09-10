@@ -47,21 +47,21 @@ const getTrendIcon = (trend?: string) => {
 
 export function SEOMetricCard({ metric }: SEOMetricCardProps) {
   return (
-    <Card className={`p-4 border-l-4 ${getStatusColor(metric.status)} hover:shadow-md transition-shadow`}>
+    <Card className={`p-4 border-l-4 ${getStatusColor(metric.status)} hover:shadow-md hover:border-indie-orange-soft transition-all duration-200 group`}>
       <div className="flex items-center justify-between">
         <div className="flex-1">
           <div className="flex items-center space-x-2 mb-1">
             {getStatusIcon(metric.status)}
-            <h4 className="text-sm font-medium text-foreground">
+            <h4 className="text-sm font-medium text-indie-brown group-hover:text-indie-brown-soft transition-colors">
               {metric.metric}
             </h4>
           </div>
           <div className="flex items-baseline space-x-2">
-            <span className="text-xl font-bold text-foreground">
+            <span className="text-xl font-bold text-indie-brown">
               {metric.value}
             </span>
             {metric.unit && (
-              <span className="text-sm text-muted-foreground">
+              <span className="text-sm text-indie-brown-muted">
                 {metric.unit}
               </span>
             )}
@@ -71,7 +71,7 @@ export function SEOMetricCard({ metric }: SEOMetricCardProps) {
         {metric.trend && metric.trendValue && (
           <div className="flex items-center space-x-1">
             {getTrendIcon(metric.trend)}
-            <span className="text-xs text-muted-foreground">
+            <span className="text-xs text-indie-brown-muted">
               {metric.trendValue}%
             </span>
           </div>

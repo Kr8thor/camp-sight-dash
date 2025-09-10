@@ -40,13 +40,13 @@ const getTrendColor = (trend: string) => {
 
 export function KPICard({ kpi }: KPICardProps) {
   return (
-    <Card className="p-6 bg-dashboard-card border-dashboard-border hover:shadow-lg transition-shadow">
+    <Card className="p-6 bg-dashboard-card border-dashboard-border hover:shadow-lg hover:border-indie-orange-muted transition-all duration-200 group">
       <div className="space-y-4">
         <div>
-          <h3 className="text-sm font-medium text-muted-foreground mb-2">
+          <h3 className="text-sm font-medium text-indie-brown-muted mb-2 group-hover:text-indie-brown-soft transition-colors">
             {kpi.metric}
           </h3>
-          <div className="text-3xl font-bold text-foreground">
+          <div className="text-3xl font-bold text-indie-brown">
             {formatValue(kpi.currentValue, kpi.unit)}
           </div>
         </div>
@@ -57,9 +57,9 @@ export function KPICard({ kpi }: KPICardProps) {
             <span className={`text-sm font-medium ${getTrendColor(kpi.trend)}`}>
               {kpi.trendPercentage.toFixed(1)}%
             </span>
-            <span className="text-sm text-muted-foreground">vs last year</span>
+            <span className="text-sm text-indie-brown-muted">vs last year</span>
           </div>
-          <div className="text-sm text-muted-foreground">
+          <div className="text-sm text-indie-brown-soft">
             {formatValue(kpi.previousYearValue, kpi.unit)}
           </div>
         </div>

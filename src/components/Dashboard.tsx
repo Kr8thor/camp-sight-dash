@@ -16,14 +16,14 @@ export function Dashboard() {
       {/* Header */}
       <div className="mb-8">
         <div className="flex items-center space-x-3 mb-2">
-          <div className="w-10 h-10 bg-travel-blue rounded-lg flex items-center justify-center">
+          <div className="w-10 h-10 bg-indie-orange rounded-lg flex items-center justify-center shadow-sm">
             <TrendingUp className="w-6 h-6 text-white" />
           </div>
           <div>
-            <h1 className="text-3xl font-bold text-foreground">
+            <h1 className="text-3xl font-bold text-indie-brown">
               Indiecampers KPI Dashboard
             </h1>
-            <div className="flex items-center space-x-2 text-muted-foreground">
+            <div className="flex items-center space-x-2 text-indie-brown-soft">
               <Calendar className="w-4 h-4" />
               <span>Monthly Report - {currentMonth}</span>
             </div>
@@ -34,10 +34,10 @@ export function Dashboard() {
       {/* Business Results KPIs */}
       <section className="mb-8">
         <div className="mb-6">
-          <h2 className="text-2xl font-semibold text-foreground mb-2">
+          <h2 className="text-2xl font-semibold text-indie-brown mb-2">
             Business Results
           </h2>
-          <p className="text-muted-foreground">
+          <p className="text-indie-brown-soft">
             Key revenue and search volume metrics with year-over-year comparisons
           </p>
         </div>
@@ -53,12 +53,12 @@ export function Dashboard() {
           <TrendChart 
             title="Organic Search Revenue Trend"
             data={monthlyTrends.organicRevenue}
-            color="#10b981"
+            color="hsl(21, 70%, 58%)"
           />
           <TrendChart 
             title="AI Search Revenue Trend"
             data={monthlyTrends.aiRevenue}
-            color="#3b82f6"
+            color="hsl(21, 60%, 38%)"
           />
         </div>
       </section>
@@ -66,22 +66,22 @@ export function Dashboard() {
       {/* SEO Health KPIs */}
       <section>
         <div className="mb-6">
-          <h2 className="text-2xl font-semibold text-foreground mb-2">
+          <h2 className="text-2xl font-semibold text-indie-brown mb-2">
             SEO Health Metrics
           </h2>
-          <p className="text-muted-foreground">
+          <p className="text-indie-brown-soft">
             Authority, link quality, and technical health indicators
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Authority & Rankings */}
-          <Card className="p-6 bg-dashboard-card border-dashboard-border">
+          <Card className="p-6 bg-dashboard-card border-dashboard-border hover:shadow-lg hover:border-indie-orange-muted transition-all duration-200">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-8 h-8 bg-travel-blue/10 rounded-lg flex items-center justify-center">
-                <Search className="w-5 h-5 text-travel-blue" />
+              <div className="w-8 h-8 bg-indie-orange-muted rounded-lg flex items-center justify-center">
+                <Search className="w-5 h-5 text-indie-orange" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground">
+              <h3 className="text-lg font-semibold text-indie-brown">
                 Authority & Rankings
               </h3>
             </div>
@@ -93,12 +93,12 @@ export function Dashboard() {
           </Card>
 
           {/* Link Quality */}
-          <Card className="p-6 bg-dashboard-card border-dashboard-border">
+          <Card className="p-6 bg-dashboard-card border-dashboard-border hover:shadow-lg hover:border-indie-orange-muted transition-all duration-200">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-8 h-8 bg-travel-green/10 rounded-lg flex items-center justify-center">
-                <Link className="w-5 h-5 text-travel-green" />
+              <div className="w-8 h-8 bg-indie-brown-muted rounded-lg flex items-center justify-center">
+                <Link className="w-5 h-5 text-indie-brown" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground">
+              <h3 className="text-lg font-semibold text-indie-brown">
                 Link Quality
               </h3>
             </div>
@@ -110,12 +110,12 @@ export function Dashboard() {
           </Card>
 
           {/* Technical Health */}
-          <Card className="p-6 bg-dashboard-card border-dashboard-border">
+          <Card className="p-6 bg-dashboard-card border-dashboard-border hover:shadow-lg hover:border-indie-orange-muted transition-all duration-200">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-8 h-8 bg-travel-orange/10 rounded-lg flex items-center justify-center">
-                <Shield className="w-5 h-5 text-travel-orange" />
+              <div className="w-8 h-8 bg-indie-orange-soft rounded-lg flex items-center justify-center">
+                <Shield className="w-5 h-5 text-indie-orange" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground">
+              <h3 className="text-lg font-semibold text-indie-brown">
                 Technical Health
               </h3>
             </div>

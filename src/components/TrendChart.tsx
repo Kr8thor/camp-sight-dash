@@ -13,8 +13,8 @@ export function TrendChart({ title, data, color }: TrendChartProps) {
   };
 
   return (
-    <Card className="p-6 bg-dashboard-card border-dashboard-border">
-      <h3 className="text-lg font-semibold text-foreground mb-4">{title}</h3>
+    <Card className="p-6 bg-dashboard-card border-dashboard-border hover:shadow-lg hover:border-indie-orange-muted transition-all duration-200">
+      <h3 className="text-lg font-semibold text-indie-brown mb-4">{title}</h3>
       <div className="h-64">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={data}>
@@ -22,22 +22,22 @@ export function TrendChart({ title, data, color }: TrendChartProps) {
               dataKey="month" 
               axisLine={false}
               tickLine={false}
-              tick={{ fontSize: 12, fill: 'hsl(var(--muted-foreground))' }}
+              tick={{ fontSize: 12, fill: 'hsl(var(--indie-brown-muted))' }}
             />
             <YAxis 
               axisLine={false}
               tickLine={false}
-              tick={{ fontSize: 12, fill: 'hsl(var(--muted-foreground))' }}
+              tick={{ fontSize: 12, fill: 'hsl(var(--indie-brown-muted))' }}
               tickFormatter={formatValue}
             />
             <Tooltip 
               formatter={(value: number) => [formatValue(value), 'Revenue']}
-              labelStyle={{ color: 'hsl(var(--foreground))' }}
+              labelStyle={{ color: 'hsl(var(--indie-brown))' }}
               contentStyle={{ 
-                backgroundColor: 'hsl(var(--card))',
-                border: '1px solid hsl(var(--border))',
+                backgroundColor: 'hsl(var(--indie-white))',
+                border: '1px solid hsl(var(--indie-orange-muted))',
                 borderRadius: '8px',
-                boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)'
+                boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.05)'
               }}
             />
             <Line 
